@@ -1,0 +1,16 @@
+cat > .gitignore << EOF
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+*.tfvars
+
+# Provider plugins (they're huge!)
+**/providers/
+**/terraform-provider-*
+
+# Other common ignores
+.DS_Store
+*.log
+EOF
